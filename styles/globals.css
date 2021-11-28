@@ -1,16 +1,90 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: Montserrat;
+}
+
+html,
+body,
+#__next {
+    width: 100%;
+    height: 100%;
+}
+
+.home_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 40px;
+    flex-direction: column;
+}
+
+.home_container h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.home_container p {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.home_container .coming_soon {
+    background-color: #222;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-family: 14px;
+    cursor: pointer;
+}
+
+.home_container .coming_soon a {
+    color: #fff;
+}
+
+.home_container .backstory {
+    margin-top: 2rem;
+    text-align: center;
+    max-width: 800px;
+    color: rgb(61, 61, 61);
+}
+
+.home_container .backstory h4 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.home_container .backstory p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .home_container {
+        padding: 10rem 2.5rem;
+    }
+
+    .home_container h1 {
+        font-size: 30px;
+    }
+
+    .home_container p {
+        font-size: 15px;
+    }
+
+    .home_container .backstory h4 {
+        font-size: 18px;
+    }
+
+    .home_container .backstory p {
+        font-size: 14px;
+    }
 }
